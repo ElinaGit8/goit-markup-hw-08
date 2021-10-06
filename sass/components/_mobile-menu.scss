@@ -5,16 +5,17 @@
     justify-content: center;
     border: none;
     background-color: unset;
-    color: var(--white);
     cursor: pointer;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);        
-        &:hover,
-        &:focus {
-        color: var(--blue);
-        }
   }
 
-    .menu-open {
+  .menu-open {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--black);
+    &:hover,
+    &:focus { 
+      fill: var(--blue);
+    }
     @media screen and (min-width: 768px) {
       display: none;
     }
@@ -24,18 +25,14 @@
     position: absolute;
     right: 15px;
     top: -30px;
-  }
-
-  .icon-menu-burger, 
-  .icon-menu-close {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--black);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);        
-        &:hover,
-        &:focus { 
-        fill: var(--blue); 
-        }
-      }
-  
+    &:hover,
+    &:focus { 
+      fill: var(--blue);
+    }
+  }
+    
   .mob-menu {
     fill: var(--black);
     position: fixed;
@@ -47,12 +44,13 @@
     padding-bottom: 48px;
     z-index: 100;
     background-color: var(--white);
-    .container {
+  .container {
       position: relative;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
+      width: 100%;
     }
     @media screen and (min-width: 768px) {
       display: none;
@@ -66,11 +64,11 @@
   font-size: 40px;
   line-height: calc(47 / 40);
   letter-spacing: 0.02em;
-  color: var(--dark-blue);
+  color: var(--black);
   text-decoration: none; 
   &:hover,
   &:focus { 
-  fill: var(--blue); 
+  color: var(--blue); 
   }
 }
 
@@ -85,13 +83,8 @@
     }
   }
   
-    .mob-menu__link 
-    .current {
+ .current {
       color: var(--blue);
-  &:hover,
-  &:focus { 
-  fill: var(--blue); 
-  }
     }
   
   .mob-menu-bottom {
@@ -110,18 +103,26 @@
   }
   
   .menu-contacts__link__mail {
+    font-family: Roboto;
+    font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 1.16;
+    line-height: calc(28 / 24);
     letter-spacing: 0.02em;
-    color: var(--grey);
+    
+    color: #757575;
+    text-decoration: none;
   }
   
   .menu-contacts__link__tel {
+    font-family: Roboto;
+    font-style: normal;
     font-weight: 500;
     font-size: 34px;
-    line-height: 1.17;
+    line-height: calc(40 / 36);
+    letter-spacing: 0.02em;
     color: var(--blue);
+    text-decoration: none;
   }
   
   .menu-social__item {
@@ -135,17 +136,16 @@
   }
   
   .menu-social__link {
+    font-family: Roboto;
+    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
-    color: var(--blue);
-    &:hover {
-      color: var(--blue);
-    }
-  
+    color: var(--blue);  
     text-decoration: none;
   }
+
   .menu-social__item:not(:last-child) .menu-social__link {
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);

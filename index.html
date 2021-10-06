@@ -23,25 +23,24 @@
 
   <header class="header">
     <div class="header-container container">
-        <nav class="nav-container">
-                <a href="./index.html" class="header__logo logo">
-                    <span class="web-part">Web</span><span class="studio-part">Studio</span></a>
+        
+        <a href="./index.html" class="header__logo logo">
+            <span class="web-part">Web</span><span class="studio-part">Studio</span></a>
 
+     <!-- nav-list -->
+
+        <nav class="nav-container">
     <ul class="nav-list">
         <li class="nav-list__item"><a href="./index.html" class="nav-list__link active">Студия</a></li>
         <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link">Портфолио</a></li>
         <li class="nav-list__item"><a href="" class="nav-list__link">Контакты</a></li>
     </ul>
         </nav> 
-        <button type="button" class="menu-open">
-            <svg width="16" height="16">
-                <use class="icon-menu-burger" href="./images/symbol-defs.svg#icon-menu_24px"></use>
-            </svg>
-        </button>
-    
- <!-- site-authorization -->
 
-   <ul class="contacts-list">
+    <!-- contacts-list -->
+    
+        <div class="contacts-container">
+    <ul class="contacts-list">
             <li class="contacts-list__item">
                 <a href="mailto:info@devstudio.com" class="contacts-list__link">
                     <svg class="contacts-icon" width="16" height="12">
@@ -58,12 +57,20 @@
             </li>
         </ul>
     </div>
+        
+        <button type="button" class="menu-open">
+            <svg class="icon-menu-open" width="24" height="16">
+                <use href="./images/symbol-defs.svg#icon-menu_24px"></use>
+            </svg>
+        </button>
+
+    </div>
 
 <div class="mob-menu is-hidden">
     <div class="container">
     <button type="button" class="menu-close">
-        <svg class="mobile__close-icon" width="16" height="16">
-            <use class="icon-menu-close" href="./images/symbol-defs.svg#icon-close-modal"></use>
+        <svg class="icon-menu-close"  width="19" height="19">
+            <use href="./images/symbol-defs.svg#icon-close-modal"></use>
         </svg>
     </button>
     <ul class="mob-menu__list list">
@@ -74,6 +81,7 @@
         <li class="mob-menu__item">
             <a class="mob-menu__link link">Контакты</a></li>
     </ul>
+
     <div class="mob-menu-bottom">
     <ul class="menu-contacts__list list">
         <li class="menu-contacts__item">
@@ -96,10 +104,10 @@
         </li>
     </ul>
     </div>
-</div>
+</div> 
 </div>
 
-
+</div>
 </header>
 
     <main>
@@ -182,11 +190,6 @@
                     srcset="./images/1_1_desk-1x.jpg 1x, ./images/1_1_desk-2x.jpg 2x"
                     media="(min-width:1200px)"
                     />
-                    <!-- <source
-                    srcset="./images/desktop/box.webp 1x, ./images/desktop/box@2x.webp 2x"
-                    media="(min-width:1200px)"
-                    type="image/web"
-                    /> -->
                     <img src="./images/1_1_desk-1x.jpg" width="370" height="294" alt="Процесс верстки" />
                 </picture>
                 <p class="activity-overlay-text">Десктопные приложения</p>
@@ -200,11 +203,6 @@
                     srcset="./images/1_2_desk-1x.jpg 1x, ./images/1_2_desk-2x.jpg 2x"
                     media="(min-width:1200px)"
                     />
-                     <!-- <source
-                    srcset="./images/desktop/box.webp 1x, ./images/desktop/box@2x.webp 2x"
-                    media="(min-width:1200px)"
-                    type="image/web"
-                    /> -->
                     <img src="./images/1_2_desk-1x.jpg" width="370" height="294" alt="Работа с мобильными устройствами" />
                 </picture>
                 <p class="activity-overlay-text">Мобильные приложения</p>
@@ -217,12 +215,7 @@
                     srcset="./images/1_3_desk-1x.jpg 1x, ./images/1_3_desk-2x.jpg 2x"
                     media="(min-width:1200px)"
                     />
-                    <!-- <source
-                    srcset="./images/desktop/box.webp 1x, ./images/desktop/box@2x.webp 2x"
-                    media="(min-width:1200px)"
-                    type="image/web"
-                    /> -->
-                                <img src="./images/1_3_desk-1x.jpg" width="370" height="294" alt="Процесс применения стилей контенту" />
+                    <img src="./images/1_3_desk-1x.jpg" width="370" height="294" alt="Процесс применения стилей контенту" />
                             </picture>
                             <p class="activity-overlay-text">Дизайнерские решения</p>
                         </div>
@@ -241,29 +234,14 @@
                     <li class="teammates-list__item">
 
                         <picture>
-                            <!-- <source
-                              srcset="./images/desktop/img.webp 1x, ./images/desktop/img@2x.webp 2x"
-                              media="(min-width:1200px)"
-                              type="image/web"
-                            /> -->
                             <source
                               srcset="./images/2_1_desk-1x.jpg 1x, ./images/2_1_desk-2x.jpg 2x"
                               media="(min-width:1200px)"
                             />
-                            <!-- <source
-                              srcset="./images/tablet/img.webp 1x, ./images/tablet/img@2x.webp 2x"
-                              media="(min-width:768px)"
-                              type="image/web"
-                            /> -->
                             <source
                               srcset="./images/2_1_tab-1x.jpg 1x, ./images/2_1_tab-2x.jpg 2x"
                               media="(min-width:768px)"
                             />
-                            <!-- <source
-                              srcset="./images/mobile/img.webp 1x, ./images/mobile/img@2x.webp 2x"
-                              media="(min-width:280px)"
-                              type="image/web"
-                            /> -->
                             <source
                               srcset="./images/2_1_mob-1x.jpg 1x, ./images/2_1_mob-2x.jpg 2x"
                               media="(min-width:280px)"
@@ -303,29 +281,14 @@
                     <li class="teammates-list__item">
 
                         <picture>
-                            <!-- <source
-                              srcset="./images/desktop/img.webp 1x, ./images/desktop/img@2x.webp 2x"
-                              media="(min-width:1200px)"
-                              type="image/web"
-                            /> -->
                             <source
                               srcset="./images/2_2_desk-1x.jpg 1x, ./images/2_2_desk-2x.jpg 2x"
                               media="(min-width:1200px)"
                             />
-                            <!-- <source
-                              srcset="./images/tablet/img.webp 1x, ./images/tablet/img@2x.webp 2x"
-                              media="(min-width:768px)"
-                              type="image/web"
-                            /> -->
                             <source
                               srcset="./images/2_2_tab-1x.jpg 1x, ./images/2_2_tab-2x.jpg 2x"
                               media="(min-width:768px)"
                             />
-                            <!-- <source
-                              srcset="./images/mobile/img.webp 1x, ./images/mobile/img@2x.webp 2x"
-                              media="(min-width:280px)"
-                              type="image/web"
-                            /> -->
                             <source
                               srcset="./images/2_2_mob-1x.jpg 1x, ./images/2_2_mob-2x.jpg 2x"
                               media="(min-width:280px)"
@@ -363,29 +326,14 @@
                     <li class="teammates-list__item">
 
                         <picture>
-                            <!-- <source
-                              srcset="./images/desktop/img.webp 1x, ./images/desktop/img@2x.webp 2x"
-                              media="(min-width:1200px)"
-                              type="image/web"
-                            /> -->
                             <source
                               srcset="./images/2_3_desk-1x.jpg 1x, ./images/2_3_desk-2x.jpg 2x"
                               media="(min-width:1200px)"
                             />
-                            <!-- <source
-                              srcset="./images/tablet/img.webp 1x, ./images/tablet/img@2x.webp 2x"
-                              media="(min-width:768px)"
-                              type="image/web"
-                            /> -->
                             <source
                               srcset="./images/2_3_tab-1x.jpg 1x, ./images/2_3_tab-2x.jpg 2x"
                               media="(min-width:768px)"
                             />
-                            <!-- <source
-                              srcset="./images/mobile/img.webp 1x, ./images/mobile/img@2x.webp 2x"
-                              media="(min-width:280px)"
-                              type="image/web"
-                            /> -->
                             <source
                               srcset="./images/2_3_mob-1x.jpg 1x, ./images/2_3_mob-2x.jpg 2x"
                               media="(min-width:280px)"
@@ -423,29 +371,14 @@
                     <li class="teammates-list__item">
 
                         <picture>
-                            <!-- <source
-                              srcset="./images/desktop/img.webp 1x, ./images/desktop/img@2x.webp 2x"
-                              media="(min-width:1200px)"
-                              type="image/web"
-                            /> -->
                             <source
                               srcset="./images/2_4_desk-1x.jpg 1x, ./images/2_4_desk-2x.jpg 2x"
                               media="(min-width:1200px)"
                             />
-                            <!-- <source
-                              srcset="./images/tablet/img.webp 1x, ./images/tablet/img@2x.webp 2x"
-                              media="(min-width:768px)"
-                              type="image/web"
-                            /> -->
                             <source
                               srcset="./images/2_4_tab-1x.jpg 1x, ./images/2_4_tab-2x.jpg 2x"
                               media="(min-width:768px)"
                             />
-                            <!-- <source
-                              srcset="./images/mobile/img.webp 1x, ./images/mobile/img@2x.webp 2x"
-                              media="(min-width:280px)"
-                              type="image/web"
-                            /> -->
                             <source
                               srcset="./images/2_4_mob-1x.jpg 1x, ./images/2_4_mob-2x.jpg 2x"
                               media="(min-width:280px)"
